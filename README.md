@@ -31,7 +31,16 @@ e.g. some applications using XML as configuration need a huge amount of memory f
 
 there are numerous other similar optimisations Quarkus also does.
 
+Quarkus leverages a lot of existing standards and functionality including Servlets, CDI etc. So you don’t need to learn a new language, like GO, to write cloud native apps.
 
+And Quarkus brings joy to developers - through live code updates. No more long waits during application build compile etc. With Kogito and Quarkus, just save your file and it’s ready for test.
+
+On the bottom of the next illustration, we can 3 bases of measurement
+- traditional cloud ( effectively Spring Boot )
+- Quarkus optimised JVM mode
+- and the 3rd Compile to Native, allowing extremely low memory consumption and startup
+
+![](https://raw.githubusercontent.com/tnscorcoran/kogito-demo/master/images/7.png)
 
 
 
