@@ -22,14 +22,12 @@ though this demo is on my laptop - just to show the 3 big benefits of Kogito:
 
 Under the covers Kogito uses Quarkus, a Red Hat sponsored open-source Java framework for fast and lightweight Java applications.
 
-Quarkus switches effort from application startup time to compile time
-
-e.g. some applications using XML as configuration need a huge amount of memory for XML parsing libraries 
+Quarkus switches effort from application startup time to compile time, e.g. some applications using XML as configuration need a huge amount of memory for XML parsing libraries: 
 - that are only used once, on application startup, then not needed 
 - this has a big impact on startup time and memory 
 - So when you move this processing to compile-time, all of these XML parsing classes and bloat can be removed from the runtime.
 
-there are numerous other similar optimisations Quarkus also does.
+There are numerous other similar optimisations Quarkus also does.
 
 Quarkus leverages a lot of existing standards and functionality including Servlets, CDI etc. So you don’t need to learn a new language, like GO, to write cloud native apps.
 
