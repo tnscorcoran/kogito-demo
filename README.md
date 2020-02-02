@@ -54,8 +54,10 @@ which initially is commented out.
 
 ## Start in Developer mode
 Clone this repo and nagivate to the root directory. Run
-./mvnw compile quarkus:dev
 
+'''
+./mvnw compile quarkus:dev
+'''
 
 We start in Developer mode - after a few seconds - it’s ready
 
@@ -114,4 +116,16 @@ Again, make the same nmeasurements of startup time and RSS memory.
 
 You'll see a staggering difference - e.g. here's a sample of a couple of runs I did:
 ![](https://raw.githubusercontent.com/tnscorcoran/kogito-demo/master/images/11-measurements.png)
+
+You can see that in Native mode my startup time was 80 times faster and memory consumption 23 times lower than already optimised JVM mode.
+
+This truly is game changing - especially on the cloud and eveb more so with Serverless workloads which will soon proliferate, where low memory and startup times are critical.
+
+Visit these links for more info:
+- Kogito - https://kogito.kie.org/
+- Quarkus - https://quarkus.io/
+
+There is a recording of this demo at:
+
+
 
