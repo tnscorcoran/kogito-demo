@@ -60,10 +60,11 @@ Clone this repo and nagivate to the root directory. Run
 We start in Developer mode - after a few seconds - it’s ready
 
 Now we go over to POSTMAN and make this API call (curl also possible in a terminal)
-curl -X POST http://localhost:8080/persons \
+
+`curl -X POST http://localhost:8080/persons \
     -H 'content-type: application/json' \
     -H 'accept: application/json' \
-    -d '{"person": {"name":"John Quark", "age": 20}}'
+    -d '{"person": {"name":"John Quark", "age": 20}}'`
 
 We can see that we have no employed field in the payload.
 
