@@ -48,3 +48,53 @@ On the bottom of the next illustration, we can 3 bases of measurement
 
 
 
+
+
+
+Now to the demo. First live code updates. This is valuable becaus it brings JOY to developers - no more mvn cmmpile, install package, whatever - waiting around for several seconds - or sometimes minutes.
+When you save a file, in the background it’s compiled & available which truly does bring joy to developers and it makes them more productive
+
+Our demo application is a simple process where we send a RESTful API call to it - and it decides
+based on a Drools rule - whether that person is an adult or not - and returns that in a JSON Payload
+
+OK the first part of the demo - live code updates.
+
+We’re going to make a change to a source file _org.acme.kogito.model.Persons.java_, exposing a new field called employed 
+which initially is commented out.
+
+## Start in Developer mode
+Clone this repo and nagivate to the root directory. Run
+./mvnw compile quarkus:dev
+
+
+We start in Developer mode - after a few seconds - it’s ready
+
+Now we go over to POSTMAN and make this API call (curl also possible in a terminal)
+curl -X POST http://localhost:8080/persons \
+    -H 'content-type: application/json' \
+    -H 'accept: application/json' \
+    -d '{"person": {"name":"John Quark", "age": 20}}'
+
+- and we can see that we have no employed field in the payload.
+
+Now if we switch back to our IDE - uncomment the employed section at the bottoms of the file and save it
+NOTE, no maven compilation is needed
+make our API call again - we can see the employed field is returned
+
+This is an absolutely awesome feature of Quarkus and Kogito
+
+
+## JVM Mode
+Now the second part of the demo. As we mentioned - Quarkus and Kogito provides big improvements over standard cloud native java - due to 
+- its optimisations, 
+- removal of dead code
+- & ahead of time compilation
+
+We’re going to compare this (already optimised) startup time and memory - in **_JVM_** mode
+with startup time and memory - in NATIVE mode a little later
+
+
+
+
+
+
