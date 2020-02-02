@@ -8,3 +8,7 @@ This repo covers a demo on Kogito - the new Red Hat sponsored open-source framew
 
 The origin of the word Kogito is - from the phrase by Rene Descartes
 _Cogito, ergo sum_ meaning, _I think - therefore I am_
+
+![](https://raw.githubusercontent.com/tnscorcoran/kogito-demo/master/images/2.png)
+
+
