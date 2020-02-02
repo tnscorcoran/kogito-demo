@@ -55,9 +55,7 @@ which initially is commented out.
 ## Start in Developer mode
 Clone this repo and nagivate to the root directory. Run
 
-'''
-./mvnw compile quarkus:dev
-'''
+`./mvnw compile quarkus:dev`
 
 We start in Developer mode - after a few seconds - it’s ready
 
