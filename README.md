@@ -84,18 +84,24 @@ We’re going to compare this (already optimised) startup time and memory - in *
 with startup time and memory - in **_NATIVE_** mode a little later
 
 Stop the application running in Dev mode by pressing CTRL +  C. Then run
-`clear
-./mvnw package`
+```
+clear
+./mvnw package
+```
 
 to build our jar. Now start it:
-`clear
-java -jar ./target/using-kogito-1.0-SNAPSHOT-runner.jar`
+```
+clear
+java -jar ./target/using-kogito-1.0-SNAPSHOT-runner.jar
+```
 
 Record the startup time in the terminal window.
 
 Now we're going to record our memory usage. We'll use Resident Set Size, or RSS. With the application still running, in a second terminal run:
+```
 clear
 ps -o pid,rss,command -p $(pgrep -f runner)
+```
 
 Record the RSS value in the terminal window.
 
