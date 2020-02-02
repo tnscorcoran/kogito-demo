@@ -1,1 +1,2 @@
-# kogito-demo
+# Kogito Demo
+
