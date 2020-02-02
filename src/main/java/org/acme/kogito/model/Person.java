@@ -40,13 +40,13 @@ public class Person implements Serializable {
 	}
 	
 
-	private boolean employed=true;
-	public boolean isEmployed() {
-		return employed;
-	}
-	public void setEmployed(boolean employed) {
-		this.employed = employed;
-	}
+	// private boolean employed=true;
+	// public boolean isEmployed() {
+	// 	return employed;
+	// }
+	// public void setEmployed(boolean employed) {
+	// 	this.employed = employed;
+	// }
 
 
 }

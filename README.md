@@ -7,7 +7,7 @@ This repo covers a demo on Kogito - the new Red Hat sponsored open-source framew
 - Processes and Cases
 
 The origin of the word Kogito is - from the phrase by Rene Descartes
-_Cogito, ergo sum_ meaning, _I think - therefore I am_
+**_Cogito, ergo sum_** meaning, **_I think - therefore I am_**
 
 ![](https://raw.githubusercontent.com/tnscorcoran/kogito-demo/master/images/2.png)
 
@@ -136,6 +136,6 @@ Visit these links for more info:
 - Quarkus - https://quarkus.io/
 
 There is a recording of this demo at:
-
+https://youtu.be/fsYB7XR6Jzc
 
 
