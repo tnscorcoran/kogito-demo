@@ -108,15 +108,19 @@ Record the RSS value in the terminal window.
 
 ## Native Mode
 
-In order to run in this mode, we need Graal VM installed and on our path. To do this visit https://quarkus.io/guides/building-native-image-guide
+In order to run in this mode, we need Graal VM installed and on our path. To do this following instructions here:  https://quarkus.io/guides/building-native-image-guide
 
 First build the native application:
+```
 ./mvnw package -Dnative
+```
 This may take several minutes to complete - recall we're now doing a lot of processing ahead of time at the compile stage so it's already done on application startup.
 
 Now run the application in native mode:
+```
 clear
 ./target/using-kogito-1.0-SNAPSHOT-runner
+```
 
 Again, make the same nmeasurements of startup time and RSS memory.
 
@@ -125,10 +129,10 @@ You'll see a staggering difference - e.g. here's a sample of a couple of runs I 
 
 You can see that in Native mode my startup time was 80 times faster and memory consumption 23 times lower than already optimised JVM mode.
 
-This truly is game changing - especially on the cloud and eveb more so with Serverless workloads which will soon proliferate, where low memory and startup times are critical.
+This truly is game changing - especially on the cloud and even more so with Serverless workloads which will soon proliferate, where low memory and startup times are critical.
 
 Visit these links for more info:
-- Kogito - https://kogito.kie.org/
+- Kogito - https://kogito.kie.org/
 - Quarkus - https://quarkus.io/
 
 There is a recording of this demo at:
