@@ -122,7 +122,7 @@ clear
 ./target/using-kogito-1.0-SNAPSHOT-runner
 ```
 
-Again, make the same nmeasurements of startup time and RSS memory.
+Again, make the same measurements of startup time and RSS memory.
 
 You'll see a staggering difference - e.g. here's a sample of a couple of runs I did:
 ![](https://raw.githubusercontent.com/tnscorcoran/kogito-demo/master/images/11-measurements.png)
@@ -136,6 +136,6 @@ Visit these links for more info:
 - Quarkus - https://quarkus.io/
 
 There is a recording of this demo at:
-https://youtu.be/fsYB7XR6Jzc
+https://youtu.be/Xxuwo0MCJpM
 
 
